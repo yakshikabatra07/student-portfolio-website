@@ -1,13 +1,9 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import './App.css'
 
 function App() {
   const containerRef = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  })
 
   const projects = [
     {
@@ -35,7 +31,8 @@ function App() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
+        staggerChildren: 0.2,
+        delayChildren: 0.1
       }
     }
   }
@@ -44,11 +41,7 @@ function App() {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
+      opacity: 1
     }
   }
 
