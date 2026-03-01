@@ -131,7 +131,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            Transforming ideas into pixel-perfect, high-performance digital experiences
+            First-year student passionate about web development and creating beautiful digital experiences
           </motion.p>
           
           <motion.div 
@@ -178,23 +178,23 @@ function App() {
           <motion.div className="about-content" variants={itemVariants}>
             <div className="about-text">
               <p className="about-intro">
-                I'm a <span className="text-highlight">full-stack developer</span> and <span className="text-highlight">designer</span> who believes in the power of thoughtful, user-centered digital experiences.
+                I'm a <span className="text-highlight">first-year student</span> at <span className="text-highlight">Chandigarh Group of Colleges</span>, passionate about web development and design.
               </p>
               <p>
-                With expertise spanning modern web technologies, I specialize in building scalable applications that don't just work—they delight. From pixel-perfect interfaces to robust backend systems, I bring ideas to life with precision and creativity.
+                As an aspiring developer, I'm constantly learning and building projects with modern technologies. I love creating beautiful, functional websites and exploring the endless possibilities of code. Every project is a new opportunity to grow my skills and bring creative ideas to life.
               </p>
               <div className="stats-grid">
                 <div className="stat-card">
-                  <h3>15+</h3>
-                  <p>Projects Completed</p>
-                </div>
-                <div className="stat-card">
                   <h3>3+</h3>
-                  <p>Years Experience</p>
+                  <p>Projects Built</p>
                 </div>
                 <div className="stat-card">
-                  <h3>100%</h3>
-                  <p>Client Satisfaction</p>
+                  <h3>1st</h3>
+                  <p>Year Student</p>
+                </div>
+                <div className="stat-card">
+                  <h3>∞</h3>
+                  <p>Passion to Learn</p>
                 </div>
               </div>
             </div>
@@ -204,12 +204,12 @@ function App() {
             <h3 className="skills-title">Technical Expertise</h3>
             <div className="skills-grid">
               {[
-                { name: 'React', level: 95, color: '#61dafb' },
-                { name: 'TypeScript', level: 90, color: '#3178c6' },
-                { name: 'Node.js', level: 88, color: '#68a063' },
-                { name: 'Python', level: 85, color: '#3776ab' },
-                { name: 'CSS/SASS', level: 92, color: '#cc6699' },
-                { name: 'MongoDB', level: 87, color: '#47a248' },
+                { name: 'React', level: 75, color: '#61dafb' },
+                { name: 'JavaScript', level: 80, color: '#f7df1e' },
+                { name: 'HTML/CSS', level: 85, color: '#e34f26' },
+                { name: 'Python', level: 70, color: '#3776ab' },
+                { name: 'TypeScript', level: 65, color: '#3178c6' },
+                { name: 'Git/GitHub', level: 75, color: '#f05032' },
               ].map((skill) => (
                 <motion.div 
                   key={skill.name} 
@@ -312,13 +312,13 @@ function App() {
             <span className="section-label">Get In Touch</span>
             <h2>Let's Create Something Amazing</h2>
             <p className="contact-description">
-              Have a project in mind? Looking to collaborate? Or just want to say hi? 
-              I'd love to hear from you.
+              Interested in collaborating on a project? Want to connect? Or just want to say hi? 
+              I'd love to hear from you!
             </p>
             
             <div className="contact-info">
               <motion.a 
-                href="mailto:yakshika.batra@example.com" 
+                href="mailto:yakshikabatra@gmail.com" 
                 className="contact-card"
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.15)" }}
                 transition={{ type: "spring", stiffness: 400 }}
@@ -330,7 +330,7 @@ function App() {
                 </div>
                 <div className="contact-details">
                   <h4>Email</h4>
-                  <p>yakshika.batra@example.com</p>
+                  <p>yakshikabatra@gmail.com</p>
                 </div>
               </motion.a>
               
