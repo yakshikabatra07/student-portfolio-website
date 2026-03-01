@@ -754,64 +754,374 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .about,
+  .projects,
+  .contact {
+    padding: 8rem 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  /* Hero Section Mobile */
   .hero {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
+    min-height: 100svh; /* Use svh for mobile browsers */
   }
   
-  .hero-cta {
-    flex-direction: column;
-    width: 100%;
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
   }
   
-  .cta-primary,
-  .cta-secondary {
-    width: 100%;
-    justify-content: center;
+  .hero h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin-bottom: 1rem;
   }
   
   .subtitle {
     flex-direction: column;
     gap: 0.5rem;
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
   }
   
   .separator {
     display: none;
   }
   
+  .tagline {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    margin: 0 auto 2.5rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .scroll-indicator {
+    bottom: 2rem;
+  }
+  
+  .mouse {
+    width: 26px;
+    height: 45px;
+  }
+  
+  /* About Section Mobile */
   .about,
   .projects,
   .contact {
-    padding: 6rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
   
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .section-label {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.2rem;
   }
   
-  .contact-info {
-    grid-template-columns: 1fr;
+  .about-header h2,
+  .projects-header h2,
+  .contact-content h2 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    margin-bottom: 2rem;
+  }
+  
+  .about-intro {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-text p {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    margin-bottom: 2rem;
   }
   
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-card h3 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+  
+  /* Skills Mobile */
+  .skills-section {
+    margin-top: 4rem;
+  }
+  
+  .skills-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 2rem;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .skill-item {
+    padding: 1.2rem;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+  }
+  
+  .skill-percent {
+    font-size: 0.9rem;
+  }
+  
+  /* Projects Mobile */
+  .projects-header {
+    margin-bottom: 3rem;
+  }
+  
+  .section-subtitle {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    border-radius: 20px;
+  }
+  
+  .project-number {
+    font-size: 3rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .project-gradient {
+    height: 180px;
+  }
+  
+  .project-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .project-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .tech-stack {
+    gap: 0.5rem;
+  }
+  
+  .tech-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .project-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Contact Mobile */
+  .contact-description {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    margin: 0 auto 3rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-details h4 {
+    font-size: 1rem;
+  }
+  
+  .contact-details p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
+  
+  .contact-footer p {
+    font-size: 0.85rem;
+  }
+  
+  /* Floating shapes - smaller on mobile */
+  .shape-1 {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .shape-2 {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .shape-3 {
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width: 480px) {
+  /* Extra small screens */
+  .hero {
+    padding: 2rem 1.2rem;
+  }
+  
+  .hero h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+  
+  .hero-badge {
+    font-size: 0.75rem;
+  }
+  
+  .about,
+  .projects,
+  .contact {
+    padding: 4rem 1.2rem;
+  }
+  
+  .about-header h2,
+  .projects-header h2,
+  .contact-content h2 {
+    font-size: clamp(1.8rem, 9vw, 2.5rem);
+  }
+  
   .project-gradient {
     height: 150px;
   }
   
   .project-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.2rem;
   }
   
+  .project-number {
+    font-size: 2.5rem;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .stat-card {
+    padding: 1.2rem;
+  }
+  
+  .skill-item {
+    padding: 1rem;
+  }
+  
+  .contact-card {
+    padding: 1.2rem;
+    flex-direction: row;
+  }
+  
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Reduce blur for better performance */
   .shape {
-    filter: blur(60px);
+    filter: blur(50px);
+    opacity: 0.2;
+  }
+  
+  /* Optimize animations for mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .cta-primary:active,
+  .cta-secondary:active,
+  .project-card:active,
+  .contact-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+  
+  .about,
+  .projects,
+  .contact {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .shape {
+    opacity: 0.25;
   }
 }
